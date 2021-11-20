@@ -1,0 +1,92 @@
+:root {
+  --white: #ffffff;
+  --grey: #CFD0D1;
+  --black: #11151A;
+  --yellow: linear-gradient(180deg, #FFD600 0%, #FFB800 100%);
+  --grey2: rgba(255, 255, 255, 0.1);
+  --white-grey: #AFB2B4;
+  --blue: linear-gradient(156.37deg, #68C0FF 7.93%, #207ACC 90.81%);
+  --yellow2: #FFD600; }
+
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+  opacity: 1; }
+
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+  outline: 2px solid #f00;
+  outline-offset: 2px; }
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+  opacity: 0.4;
+  pointer-events: none; }
+
+@font-face {
+  font-display: block;
+  font-family: 'PTMono';
+  src: url("../fonts/PT-Mono_Bold.woff2") format("woff2"), url("../fonts/PT-Mono_Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-display: block;
+  font-family: 'PTMono';
+  src: url("../fonts/PT-Mono_Regular.woff2") format("woff2"), url("../fonts/PT-Mono_Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+* {
+  -webkit-margin-before: 0em;
+  margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+  margin-block-end: 0em; }
+
+.scroll-hidden {
+  overflow: hidden; }
+
+body {
+  margin: 0;
+  font-family: "PTMono", monospace;
+  background-color: var(--black); }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+.is-outer {
+  position: relative !important;
+  left: -9999px !important; }
+
+.site-container {
+  overflow: hidden; }
+
+.is-hidden {
+  display: none !important; }
+
+.for-mobile {
+  display: none; }
+
+.error {
+  border: 2px #ff4019 solid !important; }
+
+.btn-reset {
+  border: none;
+  background: transparent;
+  cursor: pointer; }
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none; }
+
+/*# sourceMappingURL=global.css.map */
